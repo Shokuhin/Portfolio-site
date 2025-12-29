@@ -52,22 +52,21 @@ dots.forEach((dot, index) => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const loader = document.getElementById("loader");
-
-    // If loader doesn't exist on this page, do nothing
     if (!loader) return;
 
-    const links = document.querySelectorAll("a[href]");
-
-    links.forEach(link => {
-        if (link.target === "_blank") return;
-
+    document.querySelectorAll("a[href]").forEach(link => {
         link.addEventListener("click", e => {
             const href = link.getAttribute("href");
+
+            // Allow normal behaviour for anchors
             if (!href || href.startsWith("#")) return;
 
             e.preventDefault();
+
+            // SHOW loader
             loader.classList.add("show");
 
+            // Navigate after delay
             setTimeout(() => {
                 window.location.href = href;
             }, 2000);

@@ -290,10 +290,11 @@ h3 {
 }
 
 
-/* temporary */
+/* temporary 
 #loader {
     display: flex !important;
     opacity: 1 !important;
     visibility: visible !important;
     z-index: 9999 !important;
 }
+*/
