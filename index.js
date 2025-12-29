@@ -49,27 +49,3 @@ dots.forEach((dot, index) => {
     });
 });
 
-
-document.addEventListener("DOMContentLoaded", () => {
-    const loader = document.getElementById("loader");
-    if (!loader) return;
-
-    document.querySelectorAll("a[href]").forEach(link => {
-        link.addEventListener("click", e => {
-            const href = link.getAttribute("href");
-
-            // Allow normal behaviour for anchors
-            if (!href || href.startsWith("#")) return;
-
-            e.preventDefault();
-
-            // SHOW loader
-            loader.classList.add("show");
-
-            // Navigate after delay
-            setTimeout(() => {
-                window.location.href = href;
-            }, 2000);
-        });
-    });
-});
