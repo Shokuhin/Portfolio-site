@@ -299,41 +299,38 @@ h3 {
 }
 */
 /* ------------------------- */
-/* Loader */
+/* Loader */ 
+/* #loading-screen { */
+/*    position: fixed;          /* covers the whole viewport */
+
 #loading-screen {
-    position: fixed;          /* covers the whole viewport */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: white;        /* background color while loading */
-    display: flex;            /* center emojis */
+    background: white;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;                /* space between emojis */
-    font-size: 3em;           /* size of emojis */
-    z-index: 9999;            /* on top of everything */
-    opacity: 1;               /* fully visible initially */
-    transition: opacity 0.5s ease; /* smooth fade out */
+    gap: 20px;
+    font-size: 3em;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
 
 #loading-screen.hidden {
-    opacity: 0;               /* fade out */
-    pointer-events: none;     /* allow clicks through */
+    opacity: 0;
+    pointer-events: none;
 }
 
-/* Optional: animate emojis (bounce effect) */
+/* Optional: bouncing emojis */
 #loading-screen .emoji {
     animation: bounce 1s infinite alternate;
 }
-
-#loading-screen .emoji:nth-child(2) {
-    animation-delay: 0.2s;    /* stagger the middle emoji */
-}
-
-#loading-screen .emoji:nth-child(3) {
-    animation-delay: 0.4s;    /* stagger the last emoji */
-}
+#loading-screen .emoji:nth-child(2) { animation-delay: 0.2s; }
+#loading-screen .emoji:nth-child(3) { animation-delay: 0.4s; }
 
 @keyframes bounce {
     0% { transform: translateY(0); }

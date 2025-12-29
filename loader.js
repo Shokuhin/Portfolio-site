@@ -1,5 +1,5 @@
 // Wait for page load
-window.addEventListener('load', () => {
+/*window.addEventListener('load', () => {
     const loader = document.getElementById('loading-screen');
     setTimeout(() => {
         loader.classList.add('hidden');
@@ -19,4 +19,16 @@ document.querySelectorAll('a').forEach(link => {
             window.location.href = link.href;
         }, 100); // short delay to show loader
     });
+});*/
+
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loading-screen');
+    if(loader) {
+        setTimeout(() => {
+            loader.classList.add('hidden');       // fade out
+            setTimeout(() => {
+                loader.style.display = 'none';    // remove from page
+            }, 500); // match CSS transition
+        }, 2000); // how long loader shows (ms)
+    }
 });
