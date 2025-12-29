@@ -130,13 +130,13 @@ footer {
 }
 
 .gold {
-    color: gold; /* or use #FFD700 for a more precise gold */
+    color: gold !important; /* or use #FFD700 for a more precise gold */
 }
 
 .silver {
-    color: silver; 
+    color: silver !important; 
 }
 
 .bold {
-    font-weight: bold;
+    font-weight: bold !important;
 }
