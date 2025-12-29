@@ -147,3 +147,95 @@ footer {
 .bold {
     font-weight: bold !important;
 }
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Home page styles */
+.home-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.home-container img {
+    max-width: 300px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.home-container h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.home-container .links a {
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 15px 30px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.home-container .links a:hover {
+    background: #45a049;
+}
+
+/* Academic page */
+.academic-container {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.academic-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.academic-container ul {
+    list-style: disc inside;
+}
+
+.academic-container ul li {
+    margin: 10px 0;
+}
+
+.academic-container img {
+    max-width: 100%;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+/* Project section for leadership/service */
+.project {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    gap: 20px;
+}
+
+.project img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.project-content {
+    flex: 1;
+}
+
+.project.right {
+    flex-direction: row-reverse;
+}
+
+/* Section titles */
+h3 {
+    margin-bottom: 10px;
+}
