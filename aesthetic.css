@@ -42,7 +42,13 @@ section {
     border-radius: 12px;
 
 }
+.top-photo {
+   width: 600px;
+   height: 360px;
+   object-fit: cover;
+   border-radius: 12px;
 
+}
 blockquote {
     font-size: 1.2em;
     font-style: italic;
