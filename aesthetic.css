@@ -131,10 +131,12 @@ footer {
 
 .gold {
     color: gold !important; /* or use #FFD700 for a more precise gold */
+    font-weight: bold !important;
 }
 
 .silver {
     color: silver !important; 
+    font-weight: bold !important;
 }
 
 .bold {
