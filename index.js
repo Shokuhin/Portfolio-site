@@ -14,10 +14,12 @@ const prevBtn = document.querySelector(".prev");
 const dots = document.querySelectorAll(".dot");
 
 let currentIndex = 0;
-const slideWidth = slides[0].getBoundingClientRect().width;
+function getSlideWidth() {
+    return slides[0].clientWidth;
+}
 
 function updateSlide() {
-    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    track.style.transform = `translateX(-${currentIndex * getSlideWidth()}px)`;
 
     dots.forEach(dot => dot.classList.remove("active"));
     dots[currentIndex].classList.add("active");
