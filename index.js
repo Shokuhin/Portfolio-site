@@ -48,3 +48,28 @@ dots.forEach((dot, index) => {
         updateSlide();
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const loader = document.getElementById("loader");
+    const links = document.querySelectorAll("a[href]");
+
+    links.forEach(link => {
+        // Ignore new tab links
+        if (link.target === "_blank") return;
+
+        link.addEventListener("click", e => {
+            const href = link.getAttribute("href");
+
+            // Ignore anchors and empty links
+            if (!href || href.startsWith("#")) return;
+
+            e.preventDefault();
+            loader.classList.add("show");
+
+            setTimeout(() => {
+                window.location.href = href;
+            }, 800); // loading duration
+        });
+    });
+});
