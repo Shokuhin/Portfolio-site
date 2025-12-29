@@ -128,3 +128,15 @@ footer {
 .dot.active {
     background: #1e293b;
 }
+
+.gold {
+    color: gold; /* or use #FFD700 for a more precise gold */
+}
+
+.silver {
+    color: silver; 
+}
+
+.bold {
+    font-weight: bold;
+}
