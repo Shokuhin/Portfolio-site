@@ -138,7 +138,12 @@ footer {
     color: silver !important; 
     font-weight: bold !important;
 }
+ 
+.bronze {
+    color: #cd7f32 !important;
+    font-weight: bold !important;
 
+}
 .bold {
     font-weight: bold !important;
 }
