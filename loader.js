@@ -29,6 +29,6 @@ window.addEventListener('load', () => {
             setTimeout(() => {
                 loader.style.display = 'none';    // remove from page
             }, 500); // match CSS transition
-        }, 2000); // how long loader shows (ms)
+        }, 800); // how long loader shows (ms)
     }
 });
