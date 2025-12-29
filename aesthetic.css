@@ -286,3 +286,12 @@ h3 {
     60%  { opacity: 1; transform: scale(1); }
     100% { opacity: 0; }
 }
+
+
+/* temporary */
+#loader {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 9999 !important;
+}
