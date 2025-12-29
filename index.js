@@ -1,11 +1,11 @@
 // Simple fade-in effect
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
     document.body.style.opacity = 0;
     setTimeout(() => {
         document.body.style.transition = "opacity 1s";
         document.body.style.opacity = 1;
     }, 100);
-});
+}); */
 
 const track = document.querySelector(".carousel-track");
 const slides = Array.from(track.children);
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             setTimeout(() => {
                 window.location.href = href;
-            }, 800);
+            }, 2000);
         });
     });
 });
