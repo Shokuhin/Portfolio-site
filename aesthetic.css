@@ -47,6 +47,8 @@ section {
    height: 360px;
    object-fit: cover;
    border-radius: 12px;
+   display: block;
+   margin: 0 auto 30px auto;
 
 }
 blockquote {
@@ -183,15 +185,15 @@ footer {
     display: inline-block;
     margin: 10px 20px;
     padding: 15px 30px;
-    background: #4CAF50;
+    background: #1e293b;
     color: white;
     text-decoration: none;
     border-radius: 10px;
-    transition: background 0.3s;
+    transition: background-color 0.3s;
 }
 
 .home-container .links a:hover {
-    background: #45a049;
+    background: #2c3a56;
 }
 
 /* Academic page */
