@@ -406,3 +406,15 @@ h3 {
         margin: 5px 10px;
     }
 }
+/*header float*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+body {
+    padding-top: 80px; /* adjust to header height */
+}
