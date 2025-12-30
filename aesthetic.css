@@ -409,6 +409,11 @@ h3 {
         margin: 5px 10px;
     }
 }
+.site-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
 /*header float*/
 header {
     position: fixed;
