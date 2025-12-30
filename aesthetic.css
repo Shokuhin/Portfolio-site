@@ -213,6 +213,7 @@ footer {
 
 .academic-container ul {
     list-style: disc inside;
+    text-align: center;
 }
 
 .academic-container ul li {
