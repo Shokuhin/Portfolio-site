@@ -173,7 +173,8 @@ footer {
 }
 
 .home-container img {
-    max-width: 300px;
+    width: 600px;
+    height: 360px;
     border-radius: 15px;
     margin-bottom: 30px;
 }
