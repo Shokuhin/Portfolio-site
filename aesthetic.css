@@ -212,7 +212,7 @@ footer {
 }
  
 .academic-container ul {
-    list-style-position: inside;
+    list-style: none !important;
     text-align: center !important;
     padding-left: 0;
 
