@@ -210,10 +210,10 @@ footer {
     text-align: center;
     margin-bottom: 30px;
 }
-
+ 
 .academic-container ul {
     list-style: disc inside;
-    text-align: center;
+    text-align: center !important;
 }
 
 .academic-container ul li {
