@@ -184,7 +184,11 @@ footer {
 
 .home-container h1 {
     font-size: 3em;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+.home-container h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 .home-container .links a {
