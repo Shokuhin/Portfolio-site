@@ -428,3 +428,10 @@ body {
 .center {
     text-align: center;
 }
+
+.secalt {
+    background: #f8fafc;
+    padding: 3rem 1.5rem;
+    border-radius: 16px;
+    margin: 3rem auto;
+}
