@@ -423,3 +423,7 @@ header {
 body {
     padding-top: 80px; /* adjust to header height */
 }
+
+.center {
+    text-align: center;
+}
