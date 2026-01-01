@@ -401,12 +401,12 @@ body {
     /* --- Headings scale down --- */
     header h1 {
         font-size: 1.4em;
-        text-align: center;
+        /*text-align: left;*/
     }
 
-    nav {
-        text-align: center;
-    }
+    /*nav {
+        text-align: left;
+    } */
 
     nav a {
         display: inline-block;
@@ -443,6 +443,7 @@ body {
     /* --- Footer spacing already good, just tighten --- */
     .site-footer {
         padding: 40px 20px 20px;
+        text-align: center;
     }
 
     /* --- Fixed header offset adjustment --- */
