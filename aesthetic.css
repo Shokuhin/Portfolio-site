@@ -401,12 +401,12 @@ body {
     /* --- Headings scale down --- */
     header h1 {
         font-size: 1.4em;
-        /*text-align: left;*/
+        text-align: left;
     }
 
-    /*nav {
+    nav {
         text-align: left;
-    } */
+    } 
 
     nav a {
         display: inline-block;
