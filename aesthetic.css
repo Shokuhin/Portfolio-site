@@ -474,7 +474,7 @@ body {
 
     footer {
         display: flex;
-        flex-direction: column;  /* stack sections vertically */
+        flex-direction: column !important; /* stack sections vertically */
         align-items: center;     /* center all sections horizontally */
         text-align: center;      /* center text inside each section */
         gap: 15px;               /* space between stacked sections */
