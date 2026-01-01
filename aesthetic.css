@@ -405,7 +405,27 @@ body {
        /* text-align: left;*/
     }
 
+    header {
+    display: flex;
+    flex-direction: column;   /* stack h1 and nav vertically */
+    align-items: flex-start;  /* left-align everything */
+    padding: 20px;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
     header nav {
+        display: flex;           /* horizontal menu */
+        gap: 20px;               /* space between links */
+    }
+
+    header nav a {
+        text-decoration: none;
+        color: white;            /* or your preferred color */
+    }
+    /*header nav {
         display: flex;
         justify-content: flex-start;
     } 
@@ -418,7 +438,7 @@ body {
     nav a {
         display: inline-block;
         margin: 6px 10px;
-    }
+    }*/
 
     /* --- Images become fluid --- */
     .profile-pic,
@@ -452,19 +472,20 @@ body {
         padding: 40px 20px 20px;
     }
 
-    /* Footer adjustments for small screens */
     footer {
         flex-direction: column;  /* stack sections vertically */
-        text-align: center;      /* center all text */
+        align-items: center;     /* center all sections horizontally */
+        text-align: center;      /* center text inside each section */
+        gap: 15px;               /* space between stacked sections */
     }
 
     .footer-section {
-        min-width: auto;         /* allow sections to shrink naturally */
-        margin-bottom: 10px;     /* space between stacked sections */
+        min-width: auto;         /* let sections shrink naturally */
+        margin-bottom: 0;        /* spacing is handled by gap */
     }
 
     .footer-left ul {
-        justify-content: center; /* center the links */
+        justify-content: center; /* center the links horizontally */
     }
 
 
