@@ -353,7 +353,7 @@ h3 {
     font-size: 0.9em;
     color: #999;
 }
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
         text-align: center;
@@ -363,7 +363,7 @@ h3 {
         display: inline-block;
         margin: 5px 10px;
     }
-}
+} */
 /*header float*/
 header {
     position: fixed;
