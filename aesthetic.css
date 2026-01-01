@@ -263,59 +263,6 @@ h3 {
     margin-bottom: 10px;
 }
 
-/* Loading screen 
-#loader {
-    position: fixed;
-    inset: 0;
-    background: #f8fafc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-}
-
-#loader.show {
-    opacity: 1;
-    pointer-events: all;
-}
-
-.loader-content {
-    font-size: 3rem;
-}
-
-.emoji {
-    opacity: 0;
-    animation: pop 1.2s infinite;
-}
-
-.emoji:nth-child(1) { animation-delay: 0s; }
-.emoji:nth-child(2) { animation-delay: 0.2s; }
-.emoji:nth-child(3) { animation-delay: 0.4s; }
-
-@keyframes pop {
-    0%   { opacity: 0; transform: scale(0.5); }
-    30%  { opacity: 1; transform: scale(1.2); }
-    60%  { opacity: 1; transform: scale(1); }
-    100% { opacity: 0; }
-}
-
-*/
-/* temporary 
-#loader {
-    display: flex !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    z-index: 9999 !important;
-}
-*/
-/* ------------------------- */
-/* Loader */ 
-/* #loading-screen { */
-/*    position: fixed;          /* covers the whole viewport */
-
 #loading-screen {
     position: fixed;
     top: 0;
@@ -440,4 +387,66 @@ body {
     padding: 3rem 1.5rem;
     border-radius: 16px;
     margin: 3rem auto;
+}
+
+@media (max-width: 768px) {
+
+    /* --- General spacing --- */
+    section,
+    .academic-container,
+    .home-container {
+        padding: 20px 15px;
+    }
+
+    /* --- Headings scale down --- */
+    header h1 {
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px 10px;
+    }
+
+    /* --- Images become fluid --- */
+    .profile-pic,
+    .top-photo,
+    .home-container img,
+    .carousel {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100%;
+    }
+
+    /* Keep aspect ratio for carousel */
+    .carousel {
+        aspect-ratio: 5 / 3;
+    }
+
+    /* --- Projects stack vertically --- */
+    .project,
+    .project.right {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project img {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* --- Footer spacing already good, just tighten --- */
+    .site-footer {
+        padding: 40px 20px 20px;
+    }
+
+    /* --- Fixed header offset adjustment --- */
+    body {
+        padding-top: 110px;
+    }
 }
