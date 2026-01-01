@@ -473,6 +473,7 @@ body {
     }
 
     footer {
+        display: flex;
         flex-direction: column;  /* stack sections vertically */
         align-items: center;     /* center all sections horizontally */
         text-align: center;      /* center text inside each section */
@@ -480,12 +481,8 @@ body {
     }
 
     .footer-section {
-        min-width: auto;         /* let sections shrink naturally */
-        margin-bottom: 0;        /* spacing is handled by gap */
-    }
-
-    .footer-left ul {
-        justify-content: center; /* center the links horizontally */
+        width: 100%;             /* optional: make each section full width */
+        margin-bottom: 0;        /* spacing handled by gap */
     }
 
 
