@@ -468,9 +468,9 @@ body {
     }
 
     /* --- Footer spacing already good, just tighten --- */
-    .site-footer {
+    /*.site-footer {
         padding: 40px 20px 20px;
-    }
+    }*/
 
     footer {
         display: flex;
