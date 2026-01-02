@@ -428,6 +428,10 @@ body {
         margin: 0;
        /* text-align: left;*/
     }
+
+    header {
+        z-index: 1000;
+    }
 /* 
     header {
     display: flex;
@@ -459,10 +463,10 @@ body {
         background-color: #1e293b;
         display: flex;
         flex-direction: column;
-        padding-top: 110px;
+        padding-top: 120px;
         gap: 20px;
         transition: left 0.3s ease;
-        z-index: 1000;
+        z-index: 500;
     }
 
     /* Nav slides in when active */
