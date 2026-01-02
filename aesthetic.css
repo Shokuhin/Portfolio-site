@@ -430,9 +430,11 @@ body {
     }
 
     header h1 {
+        position: relative;
         z-index: 1000;
     }
     .hamburger {
+        position: relative;
         z-index: 1000;
     }
 
