@@ -456,7 +456,7 @@ body {
     }
 
     /* Hide nav by default */
-    header nav {
+    .nav-menu {
         display: none;
         flex-direction: column;
         gap: 12px;
@@ -464,7 +464,7 @@ body {
     }
 
     /* Show nav when active */
-    header nav.active {
+    .nav-menu.active {
         display: flex;
     }
 
