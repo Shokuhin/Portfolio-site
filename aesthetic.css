@@ -449,13 +449,52 @@ body {
         text-decoration: none;
         color: white;            /* or your preferred color */
     }
-    /* Show hamburger */
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -250px;          /* start off-screen */
+        width: 250px;
+        height: 100vh;
+        background-color: #1e293b;
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        gap: 20px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    /* Nav slides in when active */
+    .nav-menu.active {
+        left: 0;
+    }
+
+    /* Optional: stack header content vertically */
+    header {
+        flex-direction: row;   /* or column if you prefer */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Links inside nav stacked vertically */
+    .nav-menu a {
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+
+
+
+/*
+    /* Show hamburger
     .hamburger {
         display: block;
         color:white;
     }
 
-    /* Hide nav by default */
+    /* Hide nav by default 
     .nav-menu {
         display: none;
         flex-direction: column;
@@ -463,10 +502,10 @@ body {
         margin-top: 10px;
     }
 
-    /* Show nav when active */
+    /* Show nav when active 
     .nav-menu.active {
         display: flex;
-    }
+    } */
 
     /*header nav {
         display: flex;
