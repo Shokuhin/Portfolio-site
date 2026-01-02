@@ -395,7 +395,8 @@ header {
     background: none;
     border: none;
     cursor: pointer;
-    margin-top: 7px;
+    margin-top: 3px;
+    
 }
 body {
     padding-top: 80px; /* adjust to header height */
