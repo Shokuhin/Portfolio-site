@@ -4,5 +4,5 @@ const navMenu = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
-    window.alert('clicked!')
+    alert('clicked!')
 });
