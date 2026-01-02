@@ -471,11 +471,11 @@ body {
     }
 
     /* Optional: stack header content vertically */
-    header {
-        flex-direction: row;   /* or column if you prefer */
+    /* header {
+        flex-direction: row;   or column if you prefer 
         justify-content: space-between;
         align-items: center;
-    }
+    } */
 
     /* Links inside nav stacked vertically */
     .nav-menu a {
