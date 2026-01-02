@@ -429,9 +429,13 @@ body {
        /* text-align: left;*/
     }
 
-    header {
+    header h1 {
         z-index: 1000;
     }
+    .hamburger {
+        z-index: 1000;
+    }
+
 /* 
     header {
     display: flex;
