@@ -10,6 +10,22 @@ header {
     color: white;
     padding: 15px;
 }
+/*below 2 is temporary*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+}
+
+/* Nav links */
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+
 
 header h1 {
     margin: 0;
@@ -412,11 +428,11 @@ body {
         margin: 0;
        /* text-align: left;*/
     }
-
+/* 
     header {
     display: flex;
-    flex-direction: column;   /* stack h1 and nav vertically */
-    align-items: flex-start;  /* left-align everything */
+    flex-direction: column;   /* stack h1 and nav vertically 
+    align-items: flex-start;  /* left-align everything 
     padding: 20px;
     }
 
@@ -425,9 +441,9 @@ body {
     }
 
     header nav {
-        display: flex;           /* horizontal menu */
-        gap: 20px;               /* space between links */
-    }
+        display: flex;           /* horizontal menu 
+        gap: 20px;               /* space between links 
+    } */
 
     header nav a {
         text-decoration: none;
@@ -436,6 +452,7 @@ body {
     /* Show hamburger */
     .hamburger {
         display: block;
+        color:#cbd5e1;
     }
 
     /* Hide nav by default */
