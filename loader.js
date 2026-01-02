@@ -32,11 +32,3 @@ window.addEventListener('load', () => {
         }, 800); // how long loader shows (ms)
     }
 });
-//hamburger
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-
-hamburger.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-    window.alert("Clicked!")
-});
