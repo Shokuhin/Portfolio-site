@@ -373,6 +373,14 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
+.hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
 body {
     padding-top: 80px; /* adjust to header height */
 }
@@ -425,6 +433,24 @@ body {
         text-decoration: none;
         color: white;            /* or your preferred color */
     }
+    /* Show hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    /* Hide nav by default */
+    header nav {
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    /* Show nav when active */
+    header nav.active {
+        display: flex;
+    }
+
     /*header nav {
         display: flex;
         justify-content: flex-start;
