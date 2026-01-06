@@ -80,6 +80,10 @@ blockquote {
     margin-bottom: 8px;
     font-size: 1.17em
 }
+.linkk {
+    text-decoration: none;
+    color: #333;
+}
 
 .gallery {
     display: grid;
