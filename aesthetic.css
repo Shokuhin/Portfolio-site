@@ -235,6 +235,10 @@ footer {
     text-align: center;
     margin-bottom: 30px;
 }
+
+.academic-container h1 {
+    text-decoration: underline;
+}
  
 .academic-container ul {
     list-style: none !important;
