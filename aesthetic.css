@@ -230,7 +230,8 @@ footer {
     margin: auto;
 }
 
-.academic-container h2, h1 {
+.academic-container h2,
+.academic-container h1 {
     text-align: center;
     margin-bottom: 30px;
 }
